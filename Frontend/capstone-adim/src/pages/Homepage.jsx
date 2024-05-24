@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Carousel } from "react-bootstrap"; 
+import { Carousel } from "react-bootstrap";
+import CatSlides from "../components/CatSlides";
 const Homepage = () => {
   return (
     <div className="homepage">
@@ -25,28 +26,7 @@ const Homepage = () => {
       </div>
 
       <div className="carousel-section">
-      <Carousel>
-  <Carousel.Item>
-    <img className="img2" src="/cats1.jpg" alt="First slide" />
-    <Carousel.Caption>
-      <p>Kittens looking at the window!</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img className="img2" src="/cats2.jpg" alt="Second slide" />
-    <Carousel.Caption>
-      <p>Maxwell chilling on the display!</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img className="img2" src="/cats3.jpg" alt="Third slide" />
-    <Carousel.Caption>
-      <p>Sleeping cats!</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  {/* Add more Carousel.Items as needed */}
-</Carousel>
-
+        <CatSlides />
       </div>
 
       <div className="location-section">

@@ -2,18 +2,19 @@
   text-align: center;
   background-color: #000000;
   color: #fff;
-  -webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
   font-weight: 500;
   height: auto;
 }
 /* Navbar.css */
 .navbar {
   /* background-image: linear-gradient(to right top, #000000, #411f21, #7b3c2a, #ac6624, #ca9b06, #cfac00, #d2bf00, #d3d100, #d6bc00, #d6a703, #d29212, #cb7f1d); */
-  background-image: url(/orange_leopard_print.jpg);
+  /* background-image: url(/orange_leopard_print.jpg); */
+  background-color: #000000;
   color: #fff;
-  -webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
   font-weight: 1000;
   display: flex;
   justify-content: center;
@@ -22,8 +23,8 @@
 
 .navbar-brand a {
   color: #fff;
-  -webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -83,8 +84,25 @@
 .homepage {
   text-align: center;
   padding: 20px;
+  /* background-image: linear-gradient(
+    to right top,
+    #000000,
+    #411f21,
+    #7b3c2a,
+    #ac6624,
+    #ca9b06,
+    #cfac00,
+    #d2bf00,
+    #d3d100,
+    #d6bc00,
+    #d6a703,
+    #d29212,
+    #cb7f1d
+  ); */
+  background-image: url(/orange_leopard_print.jpg);
+
 }
-.img2{
+.img2 {
   height: 350px;
   width: 500px;
 }
@@ -121,6 +139,15 @@
 }
 
 /* Gallery.css */
+.gallery {
+  background-color: #000000;
+  color: #fff;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
+  font-weight: 500;
+  height: auto;
+  width: 100%;
+}
 .card-header {
   background-color: #000000;
   min-height: 10vh;
@@ -143,16 +170,17 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: inline-block;
   text-align: center;
-  width: 50%;
+  width: 95%;
 }
 
 .img {
-  width: 350px; 
-  height: 500px; 
+  width: 350px;
+  height: 500px;
   border-radius: 5px;
 }
-img:hover{
-  transform: scale(1.1);}
+img:hover {
+  transform: scale(1.1);
+}
 
 .name {
   font-size: 24px;
@@ -161,15 +189,13 @@ img:hover{
   color: #ffffff;
 }
 
-.about{
+.about {
   font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
   color: #ffffff;
   background-color: #000000;
 }
-
-
 
 .button {
   padding: 10px 20px;
@@ -191,18 +217,31 @@ img:hover{
 }
 
 .footer2 {
-  color:#ffffff;
+  color: #ffffff;
 }
 
+/* Blog.css */
 
+
+.Blog {
+  background-color: #000000;
+  color: #fff;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
+  font-weight: 500;
+  height: auto;
+  width: 100%;
+}
 
 /* Footer.css */
 .footer {
   /* background-image: linear-gradient(to right top, #000000, #411f21, #7b3c2a, #ac6624, #ca9b06, #cfac00, #d2bf00, #d3d100, #d6bc00, #d6a703, #d29212, #cb7f1d); */
-  background-image: url(/orange_leopard_print.jpg);
+  /* background-image: url(/orange_leopard_print.jpg); */
+  
+  background-color: #000000;
   color: #fff;
-  -webkit-text-stroke: 1px #F8F8F8;
-	text-shadow: 0px 1px 4px #000000;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000;
   font-weight: 1000;
   padding: 40px 0;
 }
@@ -250,10 +289,8 @@ img:hover{
   font-size: 14px;
 }
 
-
-
 /*Temp*/
 
-.white{
+.white {
   color: white;
 }
