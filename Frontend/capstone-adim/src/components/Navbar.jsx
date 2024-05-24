@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/api">
-                API
+                Random Cat Pictures
               </Link>
             </li>
           </ul>

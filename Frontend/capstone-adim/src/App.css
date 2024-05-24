@@ -265,7 +265,7 @@ img:hover {
 }
 
 /*Menu.css*/
-.menu-page{
+.menu-page {
   color: #fff;
   -webkit-text-stroke: 1px #f8f8f8;
   text-shadow: 0px 1px 4px #000000;
@@ -273,18 +273,46 @@ img:hover {
   height: auto;
   width: 100%;
   margin-bottom: 10px;
+}
+.menu-header {
+  border: solid red;
+  background-color: #1f1e1e;
+  margin-bottom: 10px;
+}
+.menu-item {
+  border: solid red;
+  background-color: #1f1e1e;
+  margin-bottom: 10px;
+}
 
+/*Api.css*/
+
+.api-page {
+  align-items: center;
 }
-.menu-header{
+
+.cat-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+.api-header {
   border: solid red;
   background-color: #1f1e1e;
   margin-bottom: 10px;
 }
-.menu-item{ 
+.api-body{
   border: solid red;
   background-color: #1f1e1e;
   margin-bottom: 10px;
 }
+
+/* .cat-image-container {
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+} */
 
 /* Footer.css */
 .footer {
