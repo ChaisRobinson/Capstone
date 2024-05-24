@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -12,16 +13,16 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div style={{ position: 'relative', width: '300px', margin: 'auto' }}>
-      <button onClick={prevImage} style={{ position: 'absolute', top: '50%', left: '10px' }}>
+    <div className="carousel-container">
+      <button className="prev-button" onClick={prevImage}>
         {'<'}
       </button>
       <img
         src={images[currentIndex]}
         alt=""
-        style={{ width: '100%', borderRadius: '8px' }}
+        className="carousel-image"
       />
-      <button onClick={nextImage} style={{ position: 'absolute', top: '50%', right: '10px' }}>
+      <button className="next-button" onClick={nextImage}>
         {'>'}
       </button>
     </div>

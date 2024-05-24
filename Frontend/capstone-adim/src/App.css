@@ -227,6 +227,29 @@ img:hover {
   height: auto;
   width: 100%;
 }
+/* Carousel.css */
+.carousel-container {
+  position: relative;
+  width: 300px;
+  margin: auto;
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.prev-button {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
 
 /* Footer.css */
 .footer {
