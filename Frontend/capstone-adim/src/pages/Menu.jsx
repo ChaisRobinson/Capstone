@@ -3,7 +3,9 @@ import React from 'react';
 const Menu = () => {
   return (
     <div className="menu-page">
+      <div className="menu-header">
       <h1>Our Menu</h1>
+      </div>
       <div className="menu-items">
         <div className="menu-item">
           <h2>Catpuccino</h2>
