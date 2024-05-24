@@ -20,7 +20,7 @@ const Menu = () => {
           <p>A Japanese-inspired green tea latte, with a hint of sweetness and a creamy texture.</p>
           <p>Price: $4.99</p>
         </div>
-        {/* Add more menu items as needed */}
+        
       </div>
     </div>
   );
