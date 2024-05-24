@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #000000;
+  background-image: url(/orange_leopard_print.jpg);
   color: #fff;
   -webkit-text-stroke: 1px #f8f8f8;
   text-shadow: 0px 1px 4px #000000;
@@ -10,7 +10,7 @@
 /* Navbar.css */
 .navbar {
   /* background-image: linear-gradient(to right top, #000000, #411f21, #7b3c2a, #ac6624, #ca9b06, #cfac00, #d2bf00, #d3d100, #d6bc00, #d6a703, #d29212, #cb7f1d); */
-  /* background-image: url(/orange_leopard_print.jpg); */
+  
   background-color: #000000;
   color: #fff;
   -webkit-text-stroke: 1px #f8f8f8;
@@ -99,8 +99,7 @@
     #d29212,
     #cb7f1d
   ); */
-  background-image: url(/orange_leopard_print.jpg);
-
+  
 }
 .img2 {
   height: 350px;
@@ -162,8 +161,6 @@
 
 .cardcontainer {
   /* background-color: #c2d818; */
-  background-image: url(/orange_leopard_print.jpg);
-
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
@@ -222,9 +219,7 @@ img:hover {
 
 /* Blog.css */
 
-
-.Blog {
-  background-color: #000000;
+.blog {
   color: #fff;
   -webkit-text-stroke: 1px #f8f8f8;
   text-shadow: 0px 1px 4px #000000;
@@ -236,8 +231,8 @@ img:hover {
 /* Footer.css */
 .footer {
   /* background-image: linear-gradient(to right top, #000000, #411f21, #7b3c2a, #ac6624, #ca9b06, #cfac00, #d2bf00, #d3d100, #d6bc00, #d6a703, #d29212, #cb7f1d); */
-  /* background-image: url(/orange_leopard_print.jpg); */
   
+
   background-color: #000000;
   color: #fff;
   -webkit-text-stroke: 1px #f8f8f8;

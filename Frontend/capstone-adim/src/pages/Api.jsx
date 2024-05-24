@@ -5,7 +5,7 @@ const Api = () => {
     <div className="api-page">
       <h1>API Information</h1>
       <p>
-        This page provides information about our API, including how to use it and what data it provides.
+        This page provides will have a dopdown menu with cats and their images. from the CAT API.
       </p>
       
     </div>
