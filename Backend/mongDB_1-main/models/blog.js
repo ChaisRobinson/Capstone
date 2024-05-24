@@ -1,16 +1,14 @@
-
 //------> Dependencies
 const mongoose = require("mongoose");
-const { default: Blog } = require("../../../Frontend/capstone-adim/src/pages/Blog");
 
 //------> Schema
 const blogSchema = new mongoose.Schema({
   Title: String,
-  Blog: String,
+  Blog: String
 });
 
 //------> Model
-const Data = mongoose.model("Data", blogSchema);
+const Blog = mongoose.model("Blog", blogSchema);
 
 //------> Exports
 module.exports = Blog;

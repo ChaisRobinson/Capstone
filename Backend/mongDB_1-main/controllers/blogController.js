@@ -7,9 +7,10 @@ const Blog = require("../models/blog.js");
 const fetchAllBlogs = async (req, res) => {
   try {
     // 1. Get all Blog entries from the DB
-    const blogs = await Blog.find({});
+    const blog = await Blog.find({});
     // 2. Send all Blog entries back as a response
-    res.json({ blogs: blogs });
+    res.json({ Blog: blog });
+    res.json({ Title: title });
   } catch (error) {
     // Error handling
     res.status(500).json({ error: error.message });
@@ -37,7 +38,7 @@ const createBlog = async (req, res) => {
     // 1. Get data off request body
     const { Title, Blog } = req.body;
     // 2. Create new Blog entry
-    const blog = await Blog.create({ Title: Title, Blog: Blog });
+    const blog = await Blog.create({ Title, Blog });
     // 3. Send response
     res.json({ blog: blog });
   } catch (error) {
@@ -54,7 +55,7 @@ const updateBlog = async (req, res) => {
     // 2. Get data off request body
     const { Title, Blog } = req.body;
     // 3. Find the Blog entry associated with that id and update it
-    await Blog.findByIdAndUpdate(blogId, { Title: Title, Blog: Blog });
+    await Blog.findByIdAndUpdate(blogId, { Title, Blog });
     // 4. Fetch the updated Blog entry
     const updatedBlog = await Blog.findById(blogId);
     // 5. Send response

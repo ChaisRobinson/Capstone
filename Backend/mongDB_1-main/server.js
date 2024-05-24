@@ -11,36 +11,42 @@ console.log("Environment Variables:", {
 });
 const cookieParser = require("cookie-parser");
 
-// -----> allows .env
+// -----> Allows using environment variables from .env file
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const connectToDb = require("./config/connectToDb.js");
-// This pulls our Mongoose connection into application
-//  --> connectToDb()
+
+// Models
 const Note = require("./models/note.js");
-const notesController = require("./controllers/notesController.js");
 const User = require("./models/user.js");
-const userController = require("./controllers/userController.js");
 const Data = require("./models/data.js");
+const Blog = require("./models/blog.js");
+
+// Controllers
+const notesController = require("./controllers/notesController.js");
+const userController = require("./controllers/userController.js");
 const dataController = require("./controllers/dataController.js");
 const usersController = require("./controllers/usersControllers.js");
-const authenticateJWT = require("./middleware/auth");
+const blogController = require("./controllers/blogController.js");
 
+// Middleware
+const authenticateJWT = require("./middleware/auth");
 const cors = require("cors");
-// ---> Recieving reqs on cross-origins **
-app.use(express.json());
-// Express doesnt naturally convert our data to json
-app.use(cors());
-app.use(cookieParser());
-// This initializes our connectToDB() function
+
+// Express middleware
+app.use(express.json()); // Parse JSON bodies
+app.use(cors()); // Enable CORS
+app.use(cookieParser()); // Parse cookies
+
+// Initialize database connection
 connectToDb();
 
 // -----------------------------------------------------------------------> Routes
 
 // -------------------------------------------------------------------------> USERS
 
-// This links sever to usersController
+// User authentication routes
 app.post("/signup", usersController.signup);
 app.post("/login", usersController.login);
 app.post("/logout", usersController.logout);
@@ -48,49 +54,50 @@ app.get("/check-auth", authenticateJWT, (req, res) => {
   res.json({ message: "This is a protected route", user: req.user });
 });
 
-// Establish CRUD Routes for our Notes Model
 // -------------------------------------------------------------------------> Root Route
 app.get("/", (req, res) => {
   res.send("This is the root of our server");
 });
 
-// -------------------------------------------------------------------------> Read Route
+// -------------------------------------------------------------------------> Notes CRUD Routes
 
 // ---------- Get all Notes
 app.get("/notes", notesController.fetchAllNotes);
 
-// ---------- Get a sepcific Note by ID
+// ---------- Get a specific Note by ID
 app.get("/notes/:id", notesController.fetchNote);
 
-// -------------------------------------------------------------------------> Create/Post Route for notes
-// ---------- Create Notes
+// ---------- Create a Note
 app.post("/notes", notesController.createNote);
 
-// -------------------------------------------------------------------------> Update Route for notes
-// ---------- Update Notes
+// ---------- Update a Note
 app.put("/notes/:id", notesController.updateNote);
-// -------------------------------------------------------------------------> Delete Route for notes
-// ---------- Delete Notes
+
+// ---------- Delete a Note
 app.delete("/notes/:id", notesController.deleteNote);
+
 //------------------------------------------------------------------------------------------> End CRUD Routes for notes
+
+// -------------------------------------------------------------------------> User CRUD Routes
 
 // ---------- Get all Users
 app.get("/user", userController.fetchAllUsers);
 
-// ---------- Get a sepcific User by ID
+// ---------- Get a specific User by ID
 app.get("/user/:id", userController.fetchUser);
 
-// -------------------------------------------------------------------------> Create/Post Route for users
-// ---------- Create an User
+// ---------- Create a User
 app.post("/user", userController.createUser);
 
-// -------------------------------------------------------------------------> Update Route for users
-// ---------- Update an User
+// ---------- Update a User
 app.put("/user/:id", userController.updateUser);
-// -------------------------------------------------------------------------> Delete Route for users
-// ---------- Delete an User
+
+// ---------- Delete a User
 app.delete("/user/:id", userController.deleteUser);
+
 //------------------------------------------------------------------------------------------> End CRUD Routes for users
+
+// -------------------------------------------------------------------------> Data CRUD Routes
 
 // ---------- Get all Data
 app.get("/data", dataController.fetchAllData);
@@ -98,20 +105,37 @@ app.get("/data", dataController.fetchAllData);
 // ---------- Get a specific Data by ID
 app.get("/data/:id", dataController.fetchData);
 
-// -------------------------------------------------------------------------> Create/Post Route for data
 // ---------- Create a Data
 app.post("/data", dataController.createData);
 
-// -------------------------------------------------------------------------> Update Route for data
 // ---------- Update a Data
 app.put("/data/:id", dataController.updateData);
 
-// -------------------------------------------------------------------------> Delete Route for data
 // ---------- Delete a Data
 app.delete("/data/:id", dataController.deleteData);
 
 //------------------------------------------------------------------------------------------> End CRUD Routes for data
 
+// -------------------------------------------------------------------------> Blog CRUD Routes
+
+// ---------- Get all Blogs
+app.get("/blog", blogController.fetchAllBlogs);
+
+// ---------- Get a specific Blog by ID
+app.get("/blog/:id", blogController.fetchBlog);
+
+// ---------- Create a Blog
+app.post("/blog", blogController.createBlog);
+
+// ---------- Update a Blog
+app.put("/blog/:id", blogController.updateBlog);
+
+// ---------- Delete a Blog
+app.delete("/blog/:id", blogController.deleteBlog);
+
+//------------------------------------------------------------------------------------------> End CRUD Routes for blog
+
+// Start the server
 app.listen(PORT, () => {
   console.log(`Express Server Listening on port number: ${PORT}`);
 });

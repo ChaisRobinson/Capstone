@@ -1,9 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-const Blog = () => {
+const BlogPage = () => {
   return (
-    <div className='white'>Blog</div>
-  )
-}
+    <div className="blog-page">
+      <h1>Our Blog</h1>
+      <div className="blog-posts">
+       
+        <div className="blog-post">
+          <h2>Post Title 1</h2>
+          <p>Content of the first blog post...</p>
+        </div>
+        <div className="blog-post">
+          <h2>Post Title 2</h2>
+          <p>Content of the second blog post...</p>
+        </div>
+        
+      </div>
+    </div>
+  );
+};
 
-export default Blog
+export default BlogPage;
