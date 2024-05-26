@@ -5,7 +5,7 @@ function Card({ data }) {
 
   return (
     <div className="card">
-      <img src={data.photo} alt={data.name} className="img"/> 
+      <img src={data.photo} alt={data.name} className="card-img"/> 
       <h2 className="name">{data.name}</h2> 
       <p className="about">{data.about}</p>
        

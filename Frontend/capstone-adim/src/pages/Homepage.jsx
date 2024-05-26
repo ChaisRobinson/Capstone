@@ -4,30 +4,35 @@ import CatSlides from "../components/CatSlides";
 const Homepage = () => {
   return (
     <div className="homepage">
-      <div className="hero-section">
+      <div className="home-section">
         <h1>Welcome to Our Cat Cafe!</h1>
-        <p>Enjoy a cozy atmosphere with adorable cats and delicious drinks.</p>
-        <Link to="/gallery" className="btn btn-primary">
-          View Gallery
-        </Link>
-      </div>
-      <div className="about-section">
-        <h2>About Us</h2>
+        <h2>About Us</h2>{" "}
         <p>
           Our cat cafe is a place where cat lovers can come together to enjoy
           the company of furry friends while sipping on their favorite
           beverages. We offer a variety of coffee, tea, and snacks, all served
           with a side of purrs and cuddles.
         </p>
-        <Link to="/menu" className="btn btn-secondary">
-          View Menu
-        </Link>
       </div>
+      <div className="homepage-section1">
+        <div className="about-section">
+          <p>
+            Enjoy a cozy atmosphere with adorable cats and delicious drinks.
+          </p>
+          <Link to="/menu" className="btn btn-secondary">
+            View Menu
+          </Link>
+          <br></br>
+          <p> Check our cats you can play with in the link below.</p>
+          <Link to="/gallery" className="btn btn-primary">
+            View Gallery
+          </Link>
+        </div>
 
-      <div className="carousel-section">
-        <CatSlides />
+        <div className="carousel-section">
+          <CatSlides />
+        </div>
       </div>
-
       <div className="location-section">
         <h2>Visit Us</h2>
         <p>We're located in the heart of the city, at:</p>
