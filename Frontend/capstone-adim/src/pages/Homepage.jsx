@@ -1,7 +1,7 @@
 // ------------------------------------------[Imports]-----------------------------------------------------------
 import React from "react";
 import { Link } from "react-router-dom";
-import CatSlides from "../components/CatSlides";
+
 const Homepage = () => {
   return (
     <div className="homepage">
@@ -34,10 +34,12 @@ const Homepage = () => {
           </Link>
         </div>
 
-        <div className="carousel-section">
-          {" "}
-          {/*/gallery*/}
-          <CatSlides />
+        <div className="cat-img-section">
+        <h2>Pictures of our cafe</h2>
+          
+          <img className="cat-image" src="/cats1.jpg" alt="Cats" />
+          <img  className="cat-image" src="/cats2.jpg" alt="Cats" />
+          <img  className="cat-image" src="/cats3.jpg" alt="Cats" />
         </div>
       </div>
       <div className="location-section">

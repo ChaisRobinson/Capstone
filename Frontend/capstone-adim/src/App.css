@@ -112,7 +112,7 @@
   text-align: center;
   padding: 20px;
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 .img2 {
   height: 350px;
@@ -139,12 +139,20 @@
   border: solid black;
 }
 
-.carousel-section {
+.cat-img-section {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
   border: solid black;
   width: 50%;
+}
+.cat-image {
+  width: 30%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 5%;
 }
 
 .location-section {
@@ -198,7 +206,7 @@
   color: #ffffff;
   padding: 20px;
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 
 .cardcontainer {
@@ -266,9 +274,9 @@
 }
 
 /* Blog.css */
-.Blog{
+.Blog {
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 
 .blog-page {
@@ -289,7 +297,7 @@
   margin-bottom: 10px;
   width: 50%;
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 .blog-post {
   background-color: rgba(0, 0, 0, 0.5);
@@ -297,7 +305,7 @@
   border: solid black;
   margin-bottom: 10px;
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 
 /* Carousel.css */
@@ -391,14 +399,13 @@
 
 /*Api.css*/
 
-
 .api-page {
   align-items: center;
   -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000
+  text-shadow: 0px 1px 4px #000000;
 }
 
-.cat-image {
+.cat-image-2 {
   width: 50%;
   height: 100%;
   object-fit: cover;
