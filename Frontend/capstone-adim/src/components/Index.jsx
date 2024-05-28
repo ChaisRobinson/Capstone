@@ -5,6 +5,7 @@ import Notes from './Notes'
 const Index = ({ data, editNote, deleteNote }) => {
   return (
     <>
+    {/* Conditionally render the blogs if they exist and are not empty */}
       {data && data.length > 0 ? (
         data.map((note) => (
           <div className="note" key={note._id}>
@@ -13,8 +14,8 @@ const Index = ({ data, editNote, deleteNote }) => {
           </div>
         ))
       ) : (
-        <p>No blogs found.</p>
-      )}
+        <p>No blogs found.</p> 
+      )}{/* If no blogs are found, display a message */}
     </>
   )
 }

@@ -14,8 +14,8 @@ const Homepage = () => {
           beverages. We offer a variety of coffee, tea, and snacks, all served
           with a side of purrs and cuddles.
         </p>
-      </div>
-      <div className="homepage-section1">
+      </div> {/* end of home-section */}
+      <div className="homepage-section-one">
         <div className="about-section">
           <p>
             Enjoy a cozy atmosphere with adorable cats and delicious drinks.
