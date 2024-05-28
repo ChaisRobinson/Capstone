@@ -1,0 +1,123 @@
+.Blog {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formcontainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.formAdmin {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  background-color: #000;
+  border-radius: 4px;
+  font-size: 16px;
+  color:#000;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6c63ff;
+  outline: none;
+  color:#000;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+button {
+  background-color: #f4c430;
+  background-image: url("https://www.transparenttextures.com/patterns/leopard.png");
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid #b8860b;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 1px 1px #000000;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e8a317;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #cd853f;
+  transform: scale(1);
+}
+
+.formB {
+  margin-top: 20px;
+}
+
+.note {
+  background: #242424;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.note p {
+  font-size: 16px;
+  color:#333;
+}
+
+.note .note-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note .note-actions button {
+  margin-left: 10px;
+  background-color: #ff6b6b;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.note .note-actions button:hover {
+  background-color: #ff5252;
+}
+
+
+.p{
+  color: #000000;
+}
