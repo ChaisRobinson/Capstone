@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const Api = () => {
   const [catImage, setCatImage] = useState(null);
+  const [favoritedImages, setFavoritedImages] = useState([]);
 
   const fetchCatImage = async () => {
     try {
@@ -25,21 +26,42 @@ const Api = () => {
     fetchCatImage();
   }, []);
 
+  const handleFavorite = () => {
+    if (catImage) {
+      setFavoritedImages([...favoritedImages, catImage]);
+    }
+  };
+
   return (
     <div className="api-page">
       <div className="api-header">
         <h1>Random Cat Pictures</h1>
       </div>
       <div className="api-body">
+        <div className="api-image-container">
+          {catImage && (
+            <div>
+              <h2>Cat Image</h2>
+              <img src={catImage.url} alt="Cat" className="cat-image" />
+              <button onClick={handleFavorite}>Favorite</button>
+            </div>
+          )}
+          <div className="favorites">
+            <h2>Favorited Images</h2>
+            {favoritedImages.map((image, index) => (
+              <img
+                key={index}
+                src={image.url}
+                alt="Favorite"
+                className="favorite-image"
+              />
+            ))}
+          </div>
+        </div>
+        <br></br><br></br><br></br>
         <p>Click the button below to get a new cat picture.</p>
       </div>
-
-      {catImage && (
-        <div>
-          <img src={catImage.url} alt="Cat" className="cat-image"/>
-        </div>
-      )}
-
+      <br></br>
       <button className="refresh" onClick={fetchCatImage}>
         Refresh Image
       </button>

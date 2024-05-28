@@ -440,6 +440,19 @@
   transform: scale(1);
 }
 
+.api-image-container {
+  display: flex;
+}
+
+.favorites {
+  margin-left: 20px;
+}
+
+.favorite-image {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
 /* .cat-image-container {
   width: 50%;
   height: 100%;
