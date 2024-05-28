@@ -6,6 +6,7 @@ const Homepage = () => {
   return (
     <div className="homepage">
       <div className="home-section">
+        {/* Home section */}
         <h1>Welcome to Our Cat Cafe!</h1>
         <h2>About Us</h2>{" "}
         <p>
@@ -37,13 +38,14 @@ const Homepage = () => {
 
         <div className="cat-img-section">
           <h2>Pictures of our cafe</h2>
-
+          {/* Images of our cafe */}
           <img className="cat-image" src="/cats1.jpg" alt="Cats" />
           <img className="cat-image" src="/cats2.jpg" alt="Cats" />
           <img className="cat-image" src="/cats3.jpg" alt="Cats" />
         </div>
       </div>
       <div className="location-section">
+        {/* Location section */}
         <h2>Visit Us</h2>
         <p>We're located in the heart of the city, at:</p>
         <p>123 Catnip Lane</p>

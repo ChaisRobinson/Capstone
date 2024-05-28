@@ -27,7 +27,7 @@ const Gallery = () =>{
   };  // function to change the current picture backward 
 
   return (
-    <div className="cardcontainer">
+    <div className="card-container">
       <h1 className="card-header">Cats To Play with</h1>
       <Card data={currentCharacter} className="card" /> {/* Card  to dispaly the current picture*/}
       <div>
