@@ -14,20 +14,21 @@ const Homepage = () => {
           beverages. We offer a variety of coffee, tea, and snacks, all served
           with a side of purrs and cuddles.
         </p>
-      </div> {/* end of home-section */}
+      </div>{" "}
+      {/* end of home-section */}
       <div className="homepage-section-one">
         <div className="about-section">
           <p>
             Enjoy a cozy atmosphere with adorable cats and delicious drinks.
           </p>
-          <Link to="/menu" className=" btn-secondary">
+          <Link to="/menu" className="link">
             {" "}
             {/*/menu*/}
             View Menu
           </Link>
           <br></br>
           <p> Check our cats you can play with in the link below.</p>
-          <Link to="/gallery" className=" btn-primary">
+          <Link to="/gallery" className="link">
             {" "}
             {/*/gallery*/}
             View Gallery
