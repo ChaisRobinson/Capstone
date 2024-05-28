@@ -4,9 +4,11 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="container">
+      <div className="navbar-container">
         <div className="navbar-brand">
-          <h1>Chais' Cat Cafe</h1>
+          <div className="marquee">
+            <span className="marquee-element">Chais' Cat Cafe</span>
+          </div>
         </div>
         <div className="navbar-toggle">
           <button
@@ -54,6 +56,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;
