@@ -1,3 +1,4 @@
+// ------------------------------------------[Imports]-----------------------------------------------------------
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 

@@ -1,3 +1,4 @@
+// ------------------------------------------[Imports]-----------------------------------------------------------
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -7,7 +8,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-brand">
           <div className="marquee">
-            <span className="marquee-element">Chais' Cat Cafe</span>
+            <span className="marquee-element">Chais' Cat Cafe</span>  {/* Chais' Cat Cafe scolls left */}
           </div>
         </div>
         <div className="navbar-toggle">
@@ -26,28 +27,28 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/"> {/* Home */}
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/gallery">
+              <Link className="nav-link" to="/gallery"> {/* Gallery */}
                 Gallery
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blog">
+              <Link className="nav-link" to="/blog"> {/* Blog */}
                 Blog
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/menu">
+              <Link className="nav-link" to="/menu"> {/* Menu */}
                 Menu
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/api">
-                Random Cat Pictures
+              <Link className="nav-link" to="/api"> {/* API */}
+                Random Cat Pictures 
               </Link>
             </li>
           </ul>

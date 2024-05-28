@@ -1,3 +1,4 @@
+// ------------------------------------------[Imports]-----------------------------------------------------------
 import React from "react";
 
 const Notes = ({ note, editNote, deleteNote }) => {
@@ -8,10 +9,10 @@ const Notes = ({ note, editNote, deleteNote }) => {
           <p>{note.body}</p>
   
           <div className="btnContainer">
-            <button className="edit" onClick={() => editNote(note)}>
+            <button className="edit" onClick={() => editNote(note)}> {/* edit button */}
               Edit
             </button>
-            <button className="delete" onClick={() => deleteNote(note)}>
+            <button className="delete" onClick={() => deleteNote(note)}> {/* delete button */}
               Delete
             </button>
           </div>

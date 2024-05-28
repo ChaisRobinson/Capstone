@@ -1,3 +1,4 @@
+// ------------------------------------------[Imports]-----------------------------------------------------------
 import React from "react";
 import { Link } from "react-router-dom";
 import CatSlides from "../components/CatSlides";
@@ -20,16 +21,22 @@ const Homepage = () => {
             Enjoy a cozy atmosphere with adorable cats and delicious drinks.
           </p>
           <Link to="/menu" className="btn btn-secondary">
+            {" "}
+            {/*/menu*/}
             View Menu
           </Link>
           <br></br>
           <p> Check our cats you can play with in the link below.</p>
           <Link to="/gallery" className="btn btn-primary">
+            {" "}
+            {/*/gallery*/}
             View Gallery
           </Link>
         </div>
 
         <div className="carousel-section">
+          {" "}
+          {/*/gallery*/}
           <CatSlides />
         </div>
       </div>
