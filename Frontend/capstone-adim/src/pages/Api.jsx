@@ -46,13 +46,14 @@ const Api = () => {
           {catImage && (
             <div>
               <h2>Cat Image</h2>
-              <img src={catImage.url} alt="Cat" className="cat-image" /> {/* display the cat image */}
+              <img src={catImage.url} alt="Cat" className="cat-image-2" /> {/* display the cat image */}
               <button onClick={handleFavorite}>Favorite</button>{" "}
               {/* button to add the cat image to the favorited images */}
             </div>
           )}
           <div className="favorites">
             <h2>Favorited Images</h2>
+            {/* map the favorited images with the index */}
             {favoritedImages.map((image, index) => (
               <img
                 key={index}

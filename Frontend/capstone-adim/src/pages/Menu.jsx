@@ -7,13 +7,13 @@ const Menu = () => {
   const [total, setTotal] = useState(0); // Initialize total state
 
   const addToCart = (item) => {
-    const itemPrice = parseFloat(item.price.replace('$', '')); // Remove dollar sign and convert to number
+    const itemPrice = parseFloat(item.price.replace('$', '')); // Remove dollar sign and convert to number using parseFloat
     setCart([...cart, item]); // Add item to cart
     setTotal(total + itemPrice); // Update total
   };
 
   const removeFromCart = (index) => {
-    const itemPrice = parseFloat(cart[index].price.replace('$', '')); // Remove dollar sign and convert to number
+    const itemPrice = parseFloat(cart[index].price.replace('$', '')); // Remove dollar sign and convert to number using parseFloat
     const updatedCart = [...cart]; // Create a copy of the cart
     updatedCart.splice(index, 1); // Remove the item at the specified index
     setCart(updatedCart); // Update the cart state
@@ -89,12 +89,13 @@ const Menu = () => {
       </div>
       <div className="cart">
         <h2> <ShoppingCart /> </h2>
-        {/* Display message if cart is empty */}
+        {/* Display message if cart is empty else display cart items using conditional rendering */}
         {cart.length === 0 ? (
           <p>Your cart is empty.</p> 
         ) : (
           <>
             <ul>
+              {/* Map cart items to list items  using the key as an index */}
               {cart.map((item, index) => (
                 <li key={index}>
                   {item.name} - {item.price}{' '} {/* Display item name and price */}
@@ -102,7 +103,7 @@ const Menu = () => {
                 </li>
               ))}
             </ul>
-            <p>Total: ${total.toFixed(2)}</p> {/* Display total amount */}
+            <p>Total: ${total.toFixed(2)}</p> {/* Display total amount in dollars with two decimal places using  the toFixed  method*/}
           </>
         )}
       </div>

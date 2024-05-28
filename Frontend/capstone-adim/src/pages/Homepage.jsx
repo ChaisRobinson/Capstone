@@ -20,14 +20,14 @@ const Homepage = () => {
           <p>
             Enjoy a cozy atmosphere with adorable cats and delicious drinks.
           </p>
-          <Link to="/menu" className="btn btn-secondary">
+          <Link to="/menu" className=" btn-secondary">
             {" "}
             {/*/menu*/}
             View Menu
           </Link>
           <br></br>
           <p> Check our cats you can play with in the link below.</p>
-          <Link to="/gallery" className="btn btn-primary">
+          <Link to="/gallery" className=" btn-primary">
             {" "}
             {/*/gallery*/}
             View Gallery
@@ -35,11 +35,11 @@ const Homepage = () => {
         </div>
 
         <div className="cat-img-section">
-        <h2>Pictures of our cafe</h2>
-          
+          <h2>Pictures of our cafe</h2>
+
           <img className="cat-image" src="/cats1.jpg" alt="Cats" />
-          <img  className="cat-image" src="/cats2.jpg" alt="Cats" />
-          <img  className="cat-image" src="/cats3.jpg" alt="Cats" />
+          <img className="cat-image" src="/cats2.jpg" alt="Cats" />
+          <img className="cat-image" src="/cats3.jpg" alt="Cats" />
         </div>
       </div>
       <div className="location-section">
