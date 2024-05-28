@@ -2,8 +2,8 @@
   text-align: center;
   background-image: url(/orange_leopard_print.jpg);
   color: #fff;
-  -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000;
+  /* -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000; */
   font-weight: 500;
   height: auto;
 }
@@ -43,7 +43,6 @@
 
 .nav-item {
   margin-left: 1rem;
-  
 }
 
 .nav-link {
@@ -112,6 +111,8 @@
 .homepage {
   text-align: center;
   padding: 20px;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
 }
 .img2 {
   height: 350px;
@@ -196,6 +197,8 @@
   font-size: calc(10px + 2vmin);
   color: #ffffff;
   padding: 20px;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
 }
 
 .cardcontainer {
@@ -263,6 +266,10 @@
 }
 
 /* Blog.css */
+.Blog{
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
+}
 
 .blog-page {
   color: #fff;
@@ -281,12 +288,16 @@
   border: solid black;
   margin-bottom: 10px;
   width: 50%;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
 }
 .blog-post {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5%;
   border: solid black;
   margin-bottom: 10px;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
 }
 
 /* Carousel.css */
@@ -380,8 +391,11 @@
 
 /*Api.css*/
 
+
 .api-page {
   align-items: center;
+  -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000
 }
 
 .cat-image {
@@ -435,12 +449,10 @@
 /* Footer.css */
 .footer {
   /* background-image: linear-gradient(to right top, #000000, #411f21, #7b3c2a, #ac6624, #ca9b06, #cfac00, #d2bf00, #d3d100, #d6bc00, #d6a703, #d29212, #cb7f1d); */
-
   background-color: #000000;
   color: #cd853f;
-
-  -webkit-text-stroke: 1px #f8f8f8;
-  text-shadow: 0px 1px 4px #000000;
+  /* -webkit-text-stroke: 1px #f8f8f8;
+  text-shadow: 0px 1px 4px #000000; */
   font-weight: 1000;
   padding: 40px 0;
 }
@@ -474,13 +486,11 @@
 
 .footer-section a {
   color: #cd853f;
-
   text-decoration: none;
 }
 
 .social-icons a {
   color: #cd853f;
-
   font-size: 24px;
   margin-right: 10px;
 }
