@@ -10,9 +10,9 @@ const fetchAllBlogs = async (req, res) => {
     const blog = await Blog.find({});
     // 2. Send all Blog entries back as a response
     res.json({ Blog: blog });
-    res.json({ Title: title });
+    //res.json({ Title: title });
   } catch (error) {
-    // Error handling
+    // Error handling message
     res.status(500).json({ error: error.message });
   }
 };
@@ -36,9 +36,11 @@ const fetchBlog = async (req, res) => {
 const createBlog = async (req, res) => {
   try {
     // 1. Get data off request body
-    const { Title, Blog } = req.body;
+    //const { Title, Blog } = req.body;
+    
     // 2. Create new Blog entry
-    const blog = await Blog.create({ Title, Blog });
+    //const blog = await Blog.create({ Title, Blog });
+    const blog = await Blog.create(req.body);
     // 3. Send response
     res.json({ blog: blog });
   } catch (error) {
