@@ -20,25 +20,32 @@ This is a React-based website for my Future Cat Cafe. It includes various pages 
 ## Installation
 
 1. Clone the repository: https://github.com/ChaisRobinson/Capstone
-2. Navigate to the project directory: cd CAPSTONE
+2. Navigate to the project directory: `cd CAPSTONE`
 3. Install dependencies:
-  npm install
-  @testing-library/jest-dom: ^5.17.0
-  @testing-library/react: ^13.4.0
-  @testing-library/user-event: ^13.5.0
-  axios: ^1.7.2
-  bootstrap: ^5.3.3
-  icons: ^1.0.0
-  jquery: ^3.7.1
-  react: ^18.3.1
-  react-bootstrap: ^2.10.2
-  react-dom: ^18.3.1
-  react-icons: ^5.2.1
-  react-router-dom: ^6.23.1
-  react-scripts: ^3.0.1
-  router: ^1.3.8
-  web-vitals: ^2.1.4
-5. Start development sever: npm start
+    ```bash
+    npm install
+    ```
+4. The project uses the following dependencies:
+    - `@testing-library/jest-dom`: `^5.17.0`
+    - `@testing-library/react`: `^13.4.0`
+    - `@testing-library/user-event`: `^13.5.0`
+    - `axios`: `^1.7.2`
+    - `bootstrap`: `^5.3.3`
+    - `icons`: `^1.0.0`
+    - `jquery`: `^3.7.1`
+    - `react`: `^18.3.1`
+    - `react-bootstrap`: `^2.10.2`
+    - `react-dom`: `^18.3.1`
+    - `react-icons`: `^5.2.1`
+    - `react-router-dom`: `^6.23.1`
+    - `react-scripts`: `^3.0.1`
+    - `router`: `^1.3.8`
+    - `web-vitals`: `^2.1.4`
+5. Start the development server:
+    ```bash
+    npm start
+    ```
+
 
 The website should now be running on `http://localhost:3000`.
 
