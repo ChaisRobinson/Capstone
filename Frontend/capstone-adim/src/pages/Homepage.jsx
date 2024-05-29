@@ -1,6 +1,9 @@
 // ------------------------------------------[Imports]-----------------------------------------------------------
 import React from "react";
 import { Link } from "react-router-dom";
+//import cat1 from "../images/cat1.jpg";
+//import cat2 from "../images/cat2.jpg";
+//import cat3 from "../images/cat3.jpg";
 
 const Homepage = () => {
   return (
@@ -39,9 +42,9 @@ const Homepage = () => {
         <div className="cat-img-section">
           <h2>Pictures of our cafe</h2>
           {/* Images of our cafe */}
-          <img className="cat-image" src="/cats1.jpg" alt="Cats" />
-          <img className="cat-image" src="/cats2.jpg" alt="Cats" />
-          <img className="cat-image" src="/cats3.jpg" alt="Cats" />
+          <img className="cat-image" src={`${process.env.PUBLIC_URL}/cats1.jpg`} alt="CatWindowLookers" />
+          <img className="cat-image" src={`${process.env.PUBLIC_URL}/cats2.jpg`} alt="Cats" />
+          <img className="cat-image" src={`${process.env.PUBLIC_URL}/cats3.jpg`} alt="Cats" />
         </div>
       </div>
       <div className="location-section">

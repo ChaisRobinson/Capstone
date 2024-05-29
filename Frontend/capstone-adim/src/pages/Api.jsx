@@ -1,6 +1,8 @@
 // ------------------------------------------[Imports]-----------------------------------------------------------
 import React, { useState, useEffect } from "react";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 const Api = () => {
   const [catImage, setCatImage] = useState(null); // state to store the cat image
   const [favoritedImages, setFavoritedImages] = useState([]); // state to store the favorited images
@@ -12,8 +14,7 @@ const Api = () => {
         "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1",
         {
           headers: {
-            "x-api-key":
-              "live_0Sx4YfmZdDyicWB3vPb0gxh59CrULtyvhEGdMN9fnaqXP03FU5nbcj5wxNWPgGCp",
+            "x-api-key": API_KEY,
           },
         }
       );
@@ -46,7 +47,8 @@ const Api = () => {
           {catImage && (
             <div>
               <h2>Cat Image</h2>
-              <img src={catImage.url} alt="Cat" className="cat-image-2" /> {/* display the cat image */}
+              <img src={catImage.url} alt="Cat" className="cat-image-2" />{" "}
+              {/* display the cat image */}
               <button onClick={handleFavorite}>Favorite</button>{" "}
               {/* button to add the cat image to the favorited images */}
             </div>
@@ -60,7 +62,7 @@ const Api = () => {
                 src={image.url}
                 alt="Favorite"
                 className="favorite-image"
-              /> 
+              />
             ))}
             {/* display the favorited images*/}
           </div>
@@ -71,7 +73,9 @@ const Api = () => {
         <p>Click the button below to get a new cat picture.</p>
       </div>
       <br></br>
-      <button className="refresh" onClick={fetchCatImage}>  {/* button to fetch the cat image */}
+      <button className="refresh" onClick={fetchCatImage}>
+        {" "}
+        {/* button to fetch the cat image */}
         Refresh Image
       </button>
     </div>

@@ -23,22 +23,22 @@ const Footer = () => {
           <div className="footer-section">
             <h3>Follow Us</h3>
             <div className="social-icons">
-              <a href="https://www.facebook.com/" target="_blank">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 {" "}
                 {/* anchor tag to Facebook, target="_blank" will open the link in a new tab */}
                 <FaFacebook /> {/* Facebook icon */}
               </a>
-              <a href="https://twitter.com" target="_blank">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 {" "}
                 {/* anchor tag to Twitter, target="_blank" will open the link in a new tab */}
                 <FaTwitter /> {/* Twitter icon */}
               </a>
-              <a href="https://www.instagram.com" target="_blank">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 {" "}
                 {/* anchor tag to Instagram, target="_blank" will open the link in a new tab */}
                 <FaInstagram /> {/* Instagram icon */}
               </a>
-              <a href="https://www.linkedin.com" target="_blank">
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 {" "}
                 {/* anchor tag to LinkedIn, target="_blank" will open the link in a new tab */}
                 <FaLinkedin /> {/* LinkedIn icon */}

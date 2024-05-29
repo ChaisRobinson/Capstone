@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url(/orange_leopard_print.jpg);
+  background-image: url(./images/orange_leopard_print.jpg);
   color: #fff;
   /* -webkit-text-stroke: 1px #f8f8f8;
   text-shadow: 0px 1px 4px #000000; */
@@ -127,6 +127,7 @@
 .cat-img-section {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   padding-top: 30px;
   margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.5);
