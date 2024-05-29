@@ -4,7 +4,7 @@ This is a React-based website for my Future Cat Cafe. It includes various pages 
 
 ## Features
 
-- **Homepage**: Introduces the cafe and provides links to the menu and gallery pages also has a photo card to veiw images from our store.
+- **Homepage**: Introduces the cafe and provides links to the menu and gallery pages also has a photos from our store.
 - **Gallery**: A page that dispays the cats you can play with with a brief description of each of them.
 - **Menu**: Displays a list of menu items with descriptions, prices, and an option to add items to the cart.
 - **Blog**: Allows creating, reading, updating, and deleting blog posts (CRUD operations). The blog posts are managed through a form interface.
