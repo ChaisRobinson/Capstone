@@ -21,16 +21,36 @@ This is a React-based website for my Future Cat Cafe. It includes various pages 
 
 1. Clone the repository: https://github.com/ChaisRobinson/Capstone
 2. Navigate to the project directory: cd CAPSTONE
-3. Install dependencies: npm install
-4. Start development sever: npm start
+3. Install dependencies:
+  npm install
+  @testing-library/jest-dom: ^5.17.0
+  @testing-library/react: ^13.4.0
+  @testing-library/user-event: ^13.5.0
+  axios: ^1.7.2
+  bootstrap: ^5.3.3
+  icons: ^1.0.0
+  jquery: ^3.7.1
+  react: ^18.3.1
+  react-bootstrap: ^2.10.2
+  react-dom: ^18.3.1
+  react-icons: ^5.2.1
+  react-router-dom: ^6.23.1
+  react-scripts: ^3.0.1
+  router: ^1.3.8
+  web-vitals: ^2.1.4
+5. Start development sever: npm start
 
 The website should now be running on `http://localhost:3000`.
 
-## File Structure
+## Front-end File Structure
 
 - `src/components`: Contains reusable components used throughout the application.
 - `src/pages`: Contains the main page components for the website (Homepage, Menu, Gallery, Blog, Random Car Pictures).
-- `src/`: Contains CSS files for styling the components and pages.
+- `src`: Contains CSS files for styling the components and pages.
+
+## Back-end File Structure
+
+
 
 ## Contributing
 
@@ -50,7 +70,7 @@ This project is licensed under the [MIT License](LICENSE).
 6. Proper naming convetion for class names.
 7. How to pass state as props to proper child pages.
 
-## Challenges Faced during the project.
+## Challenges faced during the project.
 
 1. I updated Node.js to a newer version, which led to an error. I had to add "--openssl-legacy-provider start" to my start script for the project to compile correctly.
 2. Tried to incorporate a dependency for logos that was depreciated which caused an error; I completely discarded this all together.
