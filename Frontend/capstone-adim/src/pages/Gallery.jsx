@@ -34,7 +34,7 @@ const Gallery = () =>{
         <Button onClick={prevPic} label="Previous" /> {/* Buttons to navigate to the previous and next picture*/}
         <Button onClick={changePic} label="Next" />
       </div>
-      <div className="footer2">
+      <div className="footer-two">
         <br />Made with ❤️ by Chais
       </div>
     </div>
