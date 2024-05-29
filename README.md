@@ -51,11 +51,64 @@ The website should now be running on `http://localhost:3000`.
 
 ## Front-end File Structure
 
-- `src/components`: Contains reusable components used throughout the application.
-- `src/pages`: Contains the main page components for the website (Homepage, Menu, Gallery, Blog, Random Car Pictures).
-- `src`: Contains CSS files for styling the components and pages.
+- `src/`
+    - `components/`: Contains reusable components used throughout the application.
+        - `Button.jsx`
+        - `Card.jsx`
+        - `Carousel.jsx`
+        - `Footer.jsx`
+        - `Index.jsx`
+        - `Navbar.jsx`
+        - `Notes.jsx`
+    - `Models/`
+        - `catinfo.js`
+        - `symbols.js`
+    - `pages/`: Contains the main page components for the website (Homepage, Menu, Gallery, Blog, Random Car Pictures).
+        - `Api.jsx`
+        - `Blog.css`
+        - `Blog.jsx`
+        - `Gallery.jsx`
+        - `Homepage.jsx`
+        - `Menu.jsx`
+- `App.css`
+- `App.js`
+- `index.css`: Contains CSS files for styling the components and pages.
+- `index.js`
+- `.gitignore`
+- `package-lock.json`
+- `package.json`
+- `README.md`
+
 
 ## Back-end File Structure
+
+- `Backend/`
+    - `mongo_DB_1-main/`
+        - `config/`
+            - `connectDB.js`: File for connecting to the MongoDB database
+        - `controllers/`
+            - `blogController.js`: Controller for handling blog-related operations
+            - `dataController.js`: Controller for handling data-related operations
+            - `notesController.js:` Controller for handling notes-related operations
+            - `userController.js`: Controller for handling user-related operations
+            - `usersControllers.js`: Another controller for handling user-related operations
+        - `middleware/`
+            - `auth.js`: Middleware for authentication
+        - `models/`
+            - `blog.js`: Model for the blog data
+            - `data.js`: Model for data
+            - `note.js`: Model for notes
+            - `user.js`: Model for user data
+            - `users.js`: Another model for user data
+    - `node_modules/`: Directory containing project dependencies
+    - `.gitignore`: File specifying files/directories to be ignored by Git
+    - `index.html`: Entry point for the application
+    - `package-lock.json`: File containing dependency tree and locked versions
+    - `package.json`: File containing project metadata and dependencies
+    - `server.js`: Main server file
+    - `style.css`: CSS file for styling
+
+
 
 
 
