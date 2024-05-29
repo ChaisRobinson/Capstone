@@ -8,7 +8,7 @@ This is a React-based website for my Future Cat Cafe. It includes various pages 
 - **Gallery**: A page that dispays the cats you can play with with a brief description of each of them.
 - **Menu**: Displays a list of menu items with descriptions, prices, and an option to add items to the cart.
 - **Blog**: Allows creating, reading, updating, and deleting blog posts (CRUD operations). The blog posts are managed through a form interface.
-- **Random Cat Picture**: A page that pulls an image from the Cat API randomly with a button to refresh the image, users can also save their favourite 
+- **Random Cat Picture**: A page that pulls an image from the Cat API randomly with a button to refresh the image, users can also save their favourite image to a list.
 
 ## Technologies Used
 
@@ -39,3 +39,18 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## What I learned from the project.
+
+1. How to create a marquee in React.
+2. Strengthen knowledge of useState and useEffect methods.
+3. How to identify errors in my code from the terminal and the console via browser, then fix them. Using stackoverflow and google search when needed.
+4. Strengthen knowledge of React Router and how to set up links.
+5. How to create a restful API in mongo database and use CRUD operations.
+6. Proper naming convetion for class names.
+7. How to pass state as props to proper child pages.
+
+## Challenges Faced during the project.
+
+1. I updated Node.js to a newer version, which led to an error. I had to add "--openssl-legacy-provider start" to my start script for the project to compile correctly.
+2. Tried to incorporate a dependency for logos that was depreciated which caused an error; I completely discarded this all together.
