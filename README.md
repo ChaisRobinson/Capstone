@@ -52,64 +52,60 @@ The website should now be running on `http://localhost:3000`.
 ## Front-end File Structure
 
 - `src/`
-    - `components/`: Contains reusable components used throughout the application.
-        - `Button.jsx`
-        - `Card.jsx`
-        - `Carousel.jsx`
-        - `Footer.jsx`
-        - `Index.jsx`
-        - `Navbar.jsx`
-        - `Notes.jsx`
-    - `Models/`
-        - `catinfo.js`
-        - `symbols.js`
-    - `pages/`: Contains the main page components for the website (Homepage, Menu, Gallery, Blog, Random Car Pictures).
-        - `Api.jsx`
-        - `Blog.css`
-        - `Blog.jsx`
-        - `Gallery.jsx`
-        - `Homepage.jsx`
-        - `Menu.jsx`
-- `App.css`
-- `App.js`
+- `components/`: Contains reusable components used throughout the application.
+    - `Button.jsx`: Contains the button component for the carousel.
+    - `Card.jsx`: Contains the card component for the carousel.
+    - `Carousel.jsx`: Contains the logic for the carousel component.
+    - `Footer.jsx`: Contains the basic footer component.
+    - `Index.jsx`: Contains the index logic for the blog page.
+    - `Navbar.jsx`: Contains the router links for the website navigation.
+    - `Notes.jsx`: Contains the main code for the blog component.
+- `Models/`: Contains models listed below.
+    - `catinfo.js`: Contains the information for the `Gallery.jsx` component.
+    - `symbols.js`: Contains the symbols for the carousel buttons.
+- `pages/`: Contains the main page components for the website (Homepage, Menu, Gallery, Blog, Random Car Pictures).
+    - `Api.jsx`: Contains the API call for fetching data from the cat API.
+    - `Blog.css`: Contains CSS styles for `Blog.jsx`.
+    - `Blog.jsx`: Contains CRUD operations for blog posting.
+    - `Gallery.jsx`: Contains the main code for the cats at our cafe in a carousel format.
+    - `Homepage.jsx`: Introduction page for the cafe website.
+    - `Menu.jsx`: Contains items to be sold at our cafe with a cart functionality.
+- `App.css`: CSS file for styling the application.
+- `App.js`: Main front-end file containing all pages.
 - `index.css`: Contains CSS files for styling the components and pages.
-- `index.js`
-- `.gitignore`
-- `package-lock.json`
-- `package.json`
-- `README.md`
-
+- `index.js`: Contains code to run the application properly.
+- `.gitignore`: Contains files hidden from GitHub.
+- `package-lock.json`: File containing the dependency tree and locked versions.
+- `package.json`: File containing project metadata and dependencies.
+- `README.md`: Read me file for this project.
 
 ## Back-end File Structure
 
 - `Backend/`
     - `mongo_DB_1-main/`
         - `config/`
-            - `connectDB.js`: File for connecting to the MongoDB database
-        - `controllers/`
-            - `blogController.js`: Controller for handling blog-related operations
-            - `dataController.js`: Controller for handling data-related operations
-            - `notesController.js:` Controller for handling notes-related operations
-            - `userController.js`: Controller for handling user-related operations
-            - `usersControllers.js`: Another controller for handling user-related operations
-        - `middleware/`
-            - `auth.js`: Middleware for authentication
-        - `models/`
-            - `blog.js`: Model for the blog data
-            - `data.js`: Model for data
-            - `note.js`: Model for notes
-            - `user.js`: Model for user data
-            - `users.js`: Another model for user data
-    - `node_modules/`: Directory containing project dependencies
-    - `.gitignore`: File specifying files/directories to be ignored by Git
-    - `index.html`: Entry point for the application
-    - `package-lock.json`: File containing dependency tree and locked versions
-    - `package.json`: File containing project metadata and dependencies
-    - `server.js`: Main server file
-    - `style.css`: CSS file for styling
-
-
-
+            - `connectDB.js`: File for connecting to the MongoDB database.
+        - `controllers/`: Contains the controllers listed below.
+            - `blogController.js`: Controller for handling blog-related operations.
+            - `dataController.js`: Controller for handling data-related operations.
+            - `notesController.js`: Controller for handling notes-related operations.
+            - `userController.js`: Controller for handling user-related operations.
+            - `usersControllers.js`: Another controller for handling user-related operations.
+        - `middleware/`: Contains the middleware listed below.
+            - `auth.js`: Middleware for authentication.
+        - `models/`: Contains the models listed below.
+            - `blog.js`: Model for the blog data.
+            - `data.js`: Model for data.
+            - `note.js`: Model for notes.
+            - `user.js`: Model for user data.
+            - `users.js`: Another model for user data.
+    - `node_modules/`: Directory containing project dependencies.
+    - `.gitignore`: File specifying files/directories to be ignored by Git.
+    - `index.html`: Entry point for the application.
+    - `package-lock.json`: File containing the dependency tree and locked versions.
+    - `package.json`: File containing project metadata and dependencies.
+    - `server.js`: Main server file.
+    - `style.css`: CSS file for styling.
 
 
 ## Contributing
