@@ -20,7 +20,7 @@ This is a React-based website for my Future Cat Cafe. It includes various pages 
 ## Installation
 
 1. Clone the repository: https://github.com/ChaisRobinson/Capstone
-2. Navigate to the project directory: `cd CAPSTONE`
+2. Navigate to the project directory: `cd .../Capstone`
 3. Install dependencies:
     ```bash
     npm install
