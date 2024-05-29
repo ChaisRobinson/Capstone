@@ -130,3 +130,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 1. I updated Node.js to a newer version, which led to an error. I had to add "--openssl-legacy-provider start" to my start script for the project to compile correctly.
 2. Tried to incorporate a dependency for logos that was depreciated which caused an error; I completely discarded this all together.
+3. Encountered issues with the state management library when trying to pass data between components. This required refactoring the code and restructuring the component hierarchy.
+4. Struggled with styling and layout issues, had to look up examples from w3schools or geeks4geeks.
+5. Encountered challenges related to authentication and authorization when implementing user login and access control features. (still yet to solve) 
