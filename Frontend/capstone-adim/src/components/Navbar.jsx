@@ -11,20 +11,8 @@ const Navbar = () => {
             <span className="marquee-element">Chais' Cat Cafe</span>  {/* Chais' Cat Cafe scolls left */}
           </div>
         </div>
-        <div className="navbar-toggle">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div className="collapse navbar-collapse" id="navbarNav">
+        
+        <div  id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/"> {/* Home */}

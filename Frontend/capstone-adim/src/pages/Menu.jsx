@@ -3,21 +3,23 @@ import React, { useState } from "react";
 import { ShoppingCart } from "lucide-react";
 
 const Menu = () => {
-  const [cart, setCart] = useState([]); // Initialize cart state
-  const [total, setTotal] = useState(0); // Initialize total state
+  const [cart, setCart] = useState([]); // Initialize cart state in an empty array using useState with an initial value of an empty array
+  const [total, setTotal] = useState(0); // Initialize total state using useState with an initial value of 0
 
   const addToCart = (item) => {
-    const itemPrice = parseFloat(item.price.replace("$", "")); // Remove dollar sign and convert to number using parseFloat
-    setCart([...cart, item]); // Add item to cart
-    setTotal(total + itemPrice); // Update total
+    // Defines a function to addToCart that takes an item as a parameter
+    const itemPrice = parseFloat(item.price.replace("$", "")); // Replace dollar sign with empty string and convert to number using parseFloat
+    setCart([...cart, item]); // Add item to cart using spread operator to create a new array with the item added
+    setTotal(total + itemPrice); // Update total by adding the price of the added item to the current total value
   };
 
   const removeFromCart = (index) => {
-    const itemPrice = parseFloat(cart[index].price.replace("$", "")); // Remove dollar sign and convert to number using parseFloat
-    const updatedCart = [...cart]; // Create a copy of the cart
-    updatedCart.splice(index, 1); // Remove the item at the specified index
-    setCart(updatedCart); // Update the cart state
-    setTotal(total - itemPrice); // Update total
+    // Defines a function to removeFromCart that takes an index as a parameter
+    const itemPrice = parseFloat(cart[index].price.replace("$", "")); // Remove dollar sign  with empty string and convert to number using parseFloat
+    const updatedCart = [...cart]; // Create a copy of the cart using spread operator to create a new array
+    updatedCart.splice(index, 1); // Remove the item at the specified index using splice operator
+    setCart(updatedCart); // Update the cart state using the new array
+    setTotal(total - itemPrice); // Update total by subtracting the price of the removed item from the current total value
   };
 
   return (
@@ -179,16 +181,20 @@ const Menu = () => {
         {cart.length === 0 ? (
           <p>Your cart is empty.</p>
         ) : (
-          <>
+          <> {/* <> is used to wrap multiple elements without the need for a wrapping parent element */}
             <ul>
+              {/*If cart is not empty, display list of cart items */}
               {/* Map cart items to list items  using the key as an index */}
               {cart.map((item, index) => (
                 <li key={index}>
+                  {" "} {/* Add space between list items  */}
+                  {/* Use index as the key */}
                   {item.name} - {item.price} {/* Display item name and price */}
                   <button onClick={() => removeFromCart(index)}>
+                    {" "}
+                    {/* Remove from cart button */}
                     Remove
                   </button>{" "}
-                  {/* Remove from cart button */}
                 </li>
               ))}
             </ul>
