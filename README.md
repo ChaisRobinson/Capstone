@@ -132,4 +132,5 @@ This project is licensed under the [MIT License](LICENSE).
 2. Tried to incorporate a dependency for logos that was depreciated which caused an error; I completely discarded this all together.
 3. Encountered issues with the state management library when trying to pass data between components. This required refactoring the code and restructuring the component hierarchy.
 4. Struggled with styling and layout issues, had to look up examples from w3schools or geeks4geeks.
-5. Encountered challenges related to authentication and authorization when implementing user login and access control features. (still yet to solve) 
+5. Encountered challenges related to authentication and authorization when implementing user login and access control features. (still yet to solve)
+6. In the menu page there is a cart, when I first implemented the logic it caused an error because I forgot to get rid of the $. Upon realizing this I knew I had to replace the $ with an empty object and parseFLoat the item.price.
